@@ -2,10 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+  font-family: "Mont";
+  src: url("/MontBold.woff2");
+  src: url("/MontHeavy.woff2");
+  src: url("/MontRegular.woff2");
+  src: url("/CircularXXWeb-Book.woff2");
+}
+@font-face {
+  font-family: "MontHeavy";
+  src: url("/MontHeavy.woff");
+  src: url("/MontHeavy.woff2");
+  src: url("/MontBold.woff2");
+}
 @layer components{
     /* Header */
     .header{
-        @apply px-6 fixed w-full z-10 top-0;
+        @apply fixed top-0 z-10 w-full px-6;
     }
     .header--dark{
         @apply text-white bg-transparent
@@ -14,7 +27,7 @@
         @apply text-brandBlack bg-white
     }
     .header__nav{
-        @apply flex justify-between items-center;
+        @apply flex items-center justify-between;
     }
     .header__nav--desktop{
         @apply hidden lg:flex;
@@ -99,10 +112,10 @@
         @apply  px-6 lg:pt-118 xl:container xl:mx-auto space-y-8 
       }
       .hero__title{
-        @apply font-bold md:text-5xl lg:text-80 text-5xl
+        @apply font-bold text-40  md:text-5xl lg:text-80 leading-58
       }
       .hero__description{
-        @apply font-medium text-lg leading-30 lg:text-2xl lg:leading-8
+        @apply font-semibold text-lg lg:text-xl leading-30  lg:leading-8 pb-8 text-brandBlack-light
       }
       .hero__line-break{
         @apply hidden md:inline-block
