@@ -1,6 +1,6 @@
 const Button = ({text}) => {
     return (
-        <button className="button zoom-in ">{text}
+        <button className="button button--zoom-in ">{text}
         </button>
     );
 }
