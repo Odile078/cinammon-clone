@@ -9,7 +9,7 @@ const ServiceCard = ({image, title ,description}) => {
             <div className="service__title">
                 <Title text={title} variant=" title--size-medium title--color-secondary " tagName="h2" />
             </div>
-            <Description text={description} variant=" description--color-secondary "/>
+            <Description text={description} variant=" description--size-medium description--color-secondary "/>
         </div>
     );
 }

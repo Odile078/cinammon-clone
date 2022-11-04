@@ -32,8 +32,14 @@ module.exports = {
       },
       spacing:{
         '118':'7.375rem',//118px
+        '7':'0.4375rem',//7px
+        '10px':'0.625rem',//10px
         '18':'1.125rem',//18px
+        '30':'1.875rem',//30px
+        '50':'3.125rem',//50px
+        '90':'5.625rem',//90px
         '120':'7.5rem',//120px
+        '15':'0.9375rem',//15px
       },
       fontSize:{
         '80':'5rem',//80px
@@ -49,16 +55,17 @@ module.exports = {
         '56':'3.5rem',//56px
         '58':'3.625rem',//58px
         '72':'4.5rem',//72px
-        // '80':'4.5rem',//80px
-        // '90':'4.75rem',//90p
       },
       backgroundImage:{
         heroBackground:"url('/images/hero-background.png')"
       },
       fontFamily:{
-        mont:"'Mont','sans-serif'",
-        montHeavy:"'MontHeavy','sans-serif'",
-      }
+        mont:['Mont','sans-serif'],
+        montHeavy:['MontHeavy','sans-serif'],
+        montBold:['MontBold','sans-serif'],
+        montSemibold:['MontSemibold','sans-serif'],      
+      },
+      
     },
   },
   plugins: [],

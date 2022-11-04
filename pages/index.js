@@ -6,6 +6,7 @@ import Navbar from "../components/layout/Navbar";
 import Button from "../components/ui/Button";
 import Description from "../components/ui/Description";
 import Title from "../components/ui/Title";
+import Footer from "../components/layout/Footer";
 
 export default function Home() {
   return (
@@ -81,7 +82,7 @@ export default function Home() {
           <div className="team-demand__content">
             <Description 
             text="By hiring and managing talented people with skills specific to your project, we build you a team that’s accomplished, agile and scalable in both directions." 
-            variant=" description--color-primary "/>
+            variant=" description--color-primary description--size-medium "/>
             <div>
               <Button text="See How it Works" />
             </div>
@@ -89,6 +90,7 @@ export default function Home() {
         </div>
       </section>
     </main>
+    <Footer/>
     </>
   )
 }

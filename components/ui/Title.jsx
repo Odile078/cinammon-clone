@@ -1,8 +1,9 @@
 const Title = ({tagName,text,variant}) => {
+    const TagName=tagName
     return (
-        <tagName className={" title " + variant}>
+        <h2 className={" title " + variant}>
             {text}
-        </tagName>
+        </h2>
     );
 }
 
